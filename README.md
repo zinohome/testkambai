@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 心灵成长助手 - Youth Mental Health AI Companion
 
-## Getting Started
+一个专业的青少年心理健康AI助手平台，为家庭提供全方位的心理健康支持服务。
 
-First, run the development server:
+## ✨ 核心功能
+
+### 🧠 父母心理教练
+- **专业指导**: 帮助父母理解和应对青少年成长问题
+- **焦虑缓解**: 专业建议缓解对孩子成长的担忧
+- **沟通技巧**: 学习有效的亲子沟通方法
+- **实时对话**: 24/7在线AI教练支持
+
+### 💬 青少年心灵陪伴
+- **安全空间**: 无压力的倾诉环境
+- **情绪记录**: 每日心情追踪和情绪管理
+- **温暖陪伴**: 理解、鼓励和正面引导
+- **成长支持**: 温和的建议和情感支持
+
+### 🎯 沟通陪练系统
+- **场景练习**: 6+个真实场景模拟
+- **分级难度**: 从入门到高级的进阶练习
+- **双向训练**: 父母和青少年专项练习
+- **技能提升**: 针对性的沟通能力培养
+
+### 👨‍👩‍👧 家庭成长画像
+- **进度追踪**: 详细的成长数据记录
+- **可视化分析**: 直观的图表展示家庭互动
+- **成就系统**: 激励性的里程碑和徽章
+- **个性化报告**: 基于数据的改进建议
+
+## 🎨 设计特点
+
+- **疗愈色彩**: 采用经过心理学验证的平静色系（蓝色、绿色）
+- **现代界面**: Linear风格的高密度信息展示
+- **完全响应式**: 完美适配手机、平板和电脑
+- **流畅动画**: 温和的过渡效果提升用户体验
+
+## 🛠️ 技术栈
+
+- **框架**: Next.js 15 (App Router)
+- **语言**: TypeScript
+- **UI库**: shadcn/ui
+- **样式**: Tailwind CSS v4
+- **图标**: Lucide Icons
+- **字体**: Geist Sans & Geist Mono
+
+## 🚀 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+# 或
+pnpm install
+```
+
+### 运行开发服务器
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
+# 或
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+打开浏览器访问 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 构建生产版本
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📱 响应式设计
 
-To learn more about Next.js, take a look at the following resources:
+项目采用移动优先的响应式设计，在不同设备上都有出色表现：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **📱 手机** (320px+): 紧凑布局，核心功能优先
+- **📱 平板** (768px+): 平衡的信息密度
+- **💻 桌面** (1024px+): 完整功能展示
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 项目结构
 
-## Deploy on Vercel
+```
+testkambai/
+├── app/                    # Next.js App Router
+│   ├── globals.css        # 全局样式和主题
+│   ├── layout.tsx         # 根布局
+│   └── page.tsx           # 主页面
+├── components/            # React组件
+│   ├── ui/               # shadcn UI组件
+│   ├── parent-coach.tsx  # 父母教练组件
+│   ├── youth-companion.tsx # 青少年陪伴组件
+│   ├── practice-session.tsx # 陪练系统组件
+│   └── family-profile.tsx # 家庭画像组件
+└── public/               # 静态资源
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 色彩设计
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+项目色彩经过精心挑选，基于心理学研究：
+
+- **主色 (Primary)**: #4B92DB - 平静天空蓝，传递和平与清晰
+- **次色 (Secondary)**: #8AB9F1 - 柔和冰蓝，舒缓宁静
+- **强调色 (Accent)**: #90EE90 - 疗愈绿，象征成长与希望
+- **温暖色 (Warm)**: #FFA07A - 温暖橙，给予鼓励
+
+## 🌟 功能亮点
+
+- ✅ 实时AI对话，智能情境响应
+- ✅ 情绪追踪和可视化分析
+- ✅ 多场景沟通练习
+- ✅ 家庭成长数据仪表板
+- ✅ 成就系统激励进步
+- ✅ 完全响应式设计
+- ✅ 深色模式支持
+- ✅ 无障碍访问优化
+
+## 📄 许可证
+
+本项目采用 MIT 许可证。
+
+## 👨‍💻 开发者
+
+由 Kombai AI 辅助开发
+
+---
+
+**注**: 这是一个演示项目，AI对话功能需要接入实际的AI服务才能完全运行。当前版本包含完整的UI和交互逻辑。

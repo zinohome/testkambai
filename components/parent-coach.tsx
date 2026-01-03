@@ -94,16 +94,16 @@ export default function ParentCoach() {
           <CardHeader className="border-b py-3 sm:py-4 px-3 sm:px-6">
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary-50 flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-primary-700" />
                 </div>
                 <div className="min-w-0">
                   <CardTitle className="text-sm sm:text-base truncate">父母心理教练</CardTitle>
                   <CardDescription className="text-xs hidden sm:block">专业、理解、支持</CardDescription>
                 </div>
               </div>
-              <Badge variant="outline" className="gap-1.5 text-xs flex-shrink-0">
-                <div className="w-2 h-2 rounded-full bg-healing-green animate-pulse" />
+              <Badge variant="outline" className="gap-1.5 text-xs flex-shrink-0 border-primary-200 bg-primary-50 text-primary-700">
+                <div className="w-2 h-2 rounded-full bg-primary-600 animate-pulse" />
                 <span className="hidden sm:inline">在线</span>
               </Badge>
             </div>
@@ -117,8 +117,8 @@ export default function ParentCoach() {
                   <div key={message.id}>
                     <div className={`flex gap-2 sm:gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                       {message.role === "assistant" && (
-                        <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                          <AvatarFallback className="bg-primary/10 text-primary text-xs">AI</AvatarFallback>
+                      <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
+                          <AvatarFallback className="bg-primary-50 text-primary-700 text-xs">AI</AvatarFallback>
                         </Avatar>
                       )}
                       
@@ -132,8 +132,8 @@ export default function ParentCoach() {
                       </div>
                       
                       {message.role === "user" && (
-                        <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                          <AvatarFallback className="bg-secondary/10 text-secondary text-xs">我</AvatarFallback>
+                      <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
+                          <AvatarFallback className="bg-honey-50 text-honey-700 text-xs">我</AvatarFallback>
                         </Avatar>
                       )}
                     </div>
@@ -164,9 +164,9 @@ export default function ParentCoach() {
                     </Avatar>
                     <div className="chat-bubble-ai">
                       <div className="flex gap-1">
-                        <div className="w-2 h-2 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: "0ms" }} />
-                        <div className="w-2 h-2 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: "150ms" }} />
-                        <div className="w-2 h-2 rounded-full bg-primary/50 animate-bounce" style={{ animationDelay: "300ms" }} />
+                    <div className="w-2 h-2 rounded-full bg-primary-400 animate-bounce" style={{ animationDelay: "0ms" }} />
+                        <div className="w-2 h-2 rounded-full bg-primary-400 animate-bounce" style={{ animationDelay: "150ms" }} />
+                        <div className="w-2 h-2 rounded-full bg-primary-400 animate-bounce" style={{ animationDelay: "300ms" }} />
                       </div>
                     </div>
                   </div>
@@ -199,7 +199,7 @@ export default function ParentCoach() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base flex items-center gap-2">
-              <Lightbulb className="w-4 h-4 text-warm-orange" />
+              <Lightbulb className="w-4 h-4 text-honey-600" />
               实用建议
             </CardTitle>
           </CardHeader>
@@ -209,9 +209,9 @@ export default function ParentCoach() {
               { icon: Sparkles, title: "积极倾听", desc: "真正听懂孩子的话" },
               { icon: ThumbsUp, title: "正面鼓励", desc: "关注进步而非完美" }
             ].map((tip, idx) => (
-              <div key={idx} className="flex gap-3 p-2 rounded-lg hover:bg-muted/50 transition-colors">
-                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <tip.icon className="w-4 h-4 text-primary" />
+              <div key={idx} className="flex gap-3 p-2 rounded-lg hover:bg-primary-50 transition-colors">
+                <div className="w-8 h-8 rounded-lg bg-primary-50 flex items-center justify-center flex-shrink-0">
+                  <tip.icon className="w-4 h-4 text-primary-700" />
                 </div>
                 <div>
                   <p className="text-sm font-medium">{tip.title}</p>
@@ -226,7 +226,7 @@ export default function ParentCoach() {
         <Card>
           <CardHeader>
             <CardTitle className="text-base flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-secondary" />
+              <BookOpen className="w-4 h-4 text-honey-500" />
               推荐资源
             </CardTitle>
           </CardHeader>
@@ -248,7 +248,7 @@ export default function ParentCoach() {
         </Card>
 
         {/* Today's Focus */}
-        <Card className="bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
+        <Card className="bg-gradient-to-br from-primary-50 to-honey-50 border-primary-200">
           <CardHeader>
             <CardTitle className="text-base">今日焦点</CardTitle>
           </CardHeader>

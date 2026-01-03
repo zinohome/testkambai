@@ -143,10 +143,10 @@ export default function PracticeSession() {
           <CardContent>
             <div className="flex items-end justify-between">
               <div>
-                <div className="text-3xl font-bold text-healing-green">{completedCount}</div>
+                <div className="text-3xl font-bold text-primary-700">{completedCount}</div>
                 <p className="text-xs text-muted-foreground mt-1">个场景</p>
               </div>
-              <CheckCircle className="w-8 h-8 text-healing-green/30" />
+              <CheckCircle className="w-8 h-8 text-primary-700/30" />
             </div>
           </CardContent>
         </Card>
@@ -158,10 +158,10 @@ export default function PracticeSession() {
           <CardContent>
             <div className="flex items-end justify-between">
               <div>
-                <div className="text-3xl font-bold text-secondary">2.5</div>
+                <div className="text-3xl font-bold text-honey-500">2.5</div>
                 <p className="text-xs text-muted-foreground mt-1">小时</p>
               </div>
-              <Clock className="w-8 h-8 text-secondary/30" />
+              <Clock className="w-8 h-8 text-honey-500/30" />
             </div>
           </CardContent>
         </Card>
@@ -173,10 +173,10 @@ export default function PracticeSession() {
           <CardContent>
             <div className="flex items-end justify-between">
               <div>
-                <div className="text-3xl font-bold text-warm-orange">+22%</div>
+                <div className="text-3xl font-bold text-honey-600">+22%</div>
                 <p className="text-xs text-muted-foreground mt-1">沟通能力</p>
               </div>
-              <TrendingUp className="w-8 h-8 text-warm-orange/30" />
+              <TrendingUp className="w-8 h-8 text-honey-600/30" />
             </div>
           </CardContent>
         </Card>
@@ -304,12 +304,12 @@ export default function PracticeSession() {
 
       {/* Selected Scenario Details */}
       {selectedScenario && (
-        <Card className="border-2 border-primary/20">
+        <Card className="border-2 border-primary-200 bg-gradient-to-br from-primary-50/50 to-transparent">
           <CardHeader>
             <div className="flex items-start justify-between">
               <div>
                 <CardTitle className="flex items-center gap-2">
-                  <Target className="w-5 h-5 text-primary" />
+                  <Target className="w-5 h-5 text-primary-600" />
                   {selectedScenario.title}
                 </CardTitle>
                 <CardDescription className="mt-2">

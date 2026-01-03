@@ -1,0 +1,93 @@
+{
+  "name": "brand-color-tokens-semantic",
+  "version": "1.0.0",
+  "description": "Semantic color tokens mapped to brand scales (Primary green, Honey secondary, Warm neutrals).",
+  "color": {
+    "bg": {
+      "canvas": "#FAFAF9",
+      "subtle": "#F5F5F4",
+      "brandSubtle": "#EAF7EA",
+      "honeySubtle": "#FFF7E6"
+    },
+    "surface": {
+      "default": "#FFFFFF",
+      "raised": "#FFFFFF",
+      "muted": "#F5F5F4"
+    },
+    "border": {
+      "default": "#E7E5E4",
+      "subtle": "#F5F5F4",
+      "strong": "#D6D3D1",
+      "brand": "#B0E6B0"
+    },
+    "text": {
+      "primary": "#1C1917",
+      "secondary": "#44403C",
+      "muted": "#78716C",
+      "inverse": "#FFFFFF",
+      "link": "#007A00",
+      "linkHover": "#006300"
+    },
+    "action": {
+      "primary": {
+        "bg": "#008B00",
+        "bgHover": "#007A00",
+        "bgActive": "#006300",
+        "fg": "#FFFFFF",
+        "disabledBg": "#B0E6B0",
+        "disabledFg": "#78716C",
+        "focusRing": "#55C855"
+      },
+      "secondary": {
+        "bg": "#F59E0B",
+        "bgHover": "#D97706",
+        "bgActive": "#B45309",
+        "fg": "#1C1917",
+        "disabledBg": "#FFD98A",
+        "disabledFg": "#78716C",
+        "focusRing": "#FFAE1A"
+      },
+      "ghost": {
+        "fg": "#1C1917",
+        "fgHover": "#1C1917",
+        "bgHover": "#F5F5F4",
+        "border": "#E7E5E4"
+      }
+    },
+    "state": {
+      "success": {
+        "fg": "#007A00",
+        "bgSubtle": "#EAF7EA",
+        "border": "#B0E6B0"
+      },
+      "info": {
+        "fg": "#1D4ED8",
+        "bgSubtle": "#EFF6FF",
+        "border": "#BFDBFE"
+      },
+      "warning": {
+        "fg": "#B45309",
+        "bgSubtle": "#FFF7E6",
+        "border": "#FFD98A"
+      },
+      "danger": {
+        "fg": "#B91C1C",
+        "bgSubtle": "#FEF2F2",
+        "border": "#FECACA"
+      }
+    }
+  },
+  "notes": {
+    "a11y": [
+      "Body text contrast should meet WCAG AA (>= 4.5:1).",
+      "Prefer warm.900 (#1C1917) text on honey backgrounds; avoid white text on honey.500.",
+      "Use focusRing tokens for keyboard focus (2px recommended)."
+    ],
+    "branding": [
+      "Use deep greens primarily for CTA and key emphasis; keep large areas on warm neutrals / subtle tints for a friendly tone.",
+      "Honey is a positive emotional accent (rewards, encouragement), not the default error/warning color."
+    ]
+  }
+}
+
+

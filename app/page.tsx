@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 sm:gap-3">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-primary-600 to-honey-500 flex items-center justify-center">
                 <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
               <div>
@@ -114,10 +114,10 @@ export default function Home() {
                 <CardContent className="pb-3 sm:pb-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-primary">12</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-primary-600">12</div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">次交流</p>
                     </div>
-                    <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary/30" />
+                    <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600/30" />
                   </div>
                 </CardContent>
               </Card>
@@ -129,10 +129,10 @@ export default function Home() {
                 <CardContent className="pb-3 sm:pb-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-secondary">2.5</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-honey-500">2.5</div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">小时</p>
                     </div>
-                    <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-secondary/30" />
+                    <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-honey-500/30" />
                   </div>
                 </CardContent>
               </Card>
@@ -144,10 +144,10 @@ export default function Home() {
                 <CardContent className="pb-3 sm:pb-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-healing-green">+18%</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-primary-700">+18%</div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">提升</p>
                     </div>
-                    <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-healing-green/30" />
+                    <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-primary-700/30" />
                   </div>
                 </CardContent>
               </Card>
@@ -159,10 +159,10 @@ export default function Home() {
                 <CardContent className="pb-3 sm:pb-4">
                   <div className="flex items-end justify-between">
                     <div>
-                      <div className="text-2xl sm:text-3xl font-bold text-warm-orange">8</div>
+                      <div className="text-2xl sm:text-3xl font-bold text-honey-600">8</div>
                       <p className="text-[10px] sm:text-xs text-muted-foreground mt-1">个</p>
                     </div>
-                    <Award className="w-6 h-6 sm:w-8 sm:h-8 text-warm-orange/30" />
+                    <Award className="w-6 h-6 sm:w-8 sm:h-8 text-honey-600/30" />
                   </div>
                 </CardContent>
               </Card>

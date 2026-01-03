@@ -1,0 +1,81 @@
+{
+  "name": "brand-color-tokens-tailwind",
+  "version": "1.0.0",
+  "description": "Tailwind-style color scales for Primary (green), Honey (warm secondary), and Warm neutrals.",
+  "colors": {
+    "primary": {
+      "50": "#EAF7EA",
+      "100": "#D3F1D3",
+      "200": "#B0E6B0",
+      "300": "#85D885",
+      "400": "#55C855",
+      "500": "#22B122",
+      "600": "#008B00",
+      "700": "#007A00",
+      "800": "#006300",
+      "900": "#004A00",
+      "950": "#003300"
+    },
+    "honey": {
+      "50": "#FFF7E6",
+      "100": "#FFECC2",
+      "200": "#FFD98A",
+      "300": "#FFC34D",
+      "400": "#FFAE1A",
+      "500": "#F59E0B",
+      "600": "#D97706",
+      "700": "#B45309"
+    },
+    "warm": {
+      "50": "#FAFAF9",
+      "100": "#F5F5F4",
+      "200": "#E7E5E4",
+      "300": "#D6D3D1",
+      "500": "#78716C",
+      "700": "#44403C",
+      "900": "#1C1917"
+    },
+    "base": {
+      "white": "#FFFFFF",
+      "black": "#000000"
+    }
+  },
+  "recommended": {
+    "action": {
+      "primary": {
+        "default": "primary.600",
+        "hover": "primary.700",
+        "active": "primary.800",
+        "disabledBg": "primary.200",
+        "disabledText": "warm.500",
+        "on": "base.white",
+        "focusRing": "primary.400"
+      },
+      "secondary": {
+        "default": "honey.500",
+        "hover": "honey.600",
+        "active": "honey.700",
+        "disabledBg": "honey.200",
+        "disabledText": "warm.500",
+        "on": "warm.900",
+        "focusRing": "honey.400"
+      }
+    },
+    "background": {
+      "canvas": "warm.50",
+      "brandSubtle": "primary.50",
+      "honeySubtle": "honey.50"
+    },
+    "text": {
+      "default": "warm.900",
+      "muted": "warm.500",
+      "link": "primary.700"
+    },
+    "border": {
+      "default": "warm.200",
+      "brand": "primary.200"
+    }
+  }
+}
+
+

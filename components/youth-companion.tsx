@@ -88,7 +88,7 @@ export default function YouthCompanion() {
           <CardHeader className="border-b py-3 sm:py-4 px-3 sm:px-6">
             <div className="flex items-center justify-between gap-2">
               <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-secondary to-healing-green flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-honey-500 to-primary-600 flex items-center justify-center flex-shrink-0">
                   <Smile className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div className="min-w-0">
@@ -96,8 +96,8 @@ export default function YouthCompanion() {
                   <CardDescription className="text-xs hidden sm:block">你的倾诉和成长空间</CardDescription>
                 </div>
               </div>
-              <Badge variant="outline" className="gap-1.5 text-xs flex-shrink-0">
-                <Heart className="w-3 h-3 text-healing-green fill-healing-green" />
+              <Badge variant="outline" className="gap-1.5 text-xs flex-shrink-0 border-primary-200 bg-primary-50">
+                <Heart className="w-3 h-3 text-primary-600 fill-primary-600" />
                 <span className="hidden sm:inline">陪伴中</span>
               </Badge>
             </div>
@@ -111,7 +111,7 @@ export default function YouthCompanion() {
                   <div key={message.id} className={`flex gap-2 sm:gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}>
                     {message.role === "assistant" && (
                       <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                        <AvatarFallback className="bg-gradient-to-br from-secondary/20 to-healing-green/20 text-secondary text-xs">🌟</AvatarFallback>
+                        <AvatarFallback className="bg-gradient-to-br from-honey-50 to-primary-50 text-honey-600 text-xs">🌟</AvatarFallback>
                       </Avatar>
                     )}
                     
@@ -126,7 +126,7 @@ export default function YouthCompanion() {
                     
                     {message.role === "user" && (
                       <Avatar className="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                        <AvatarFallback className="bg-primary/10 text-primary text-xs">你</AvatarFallback>
+                        <AvatarFallback className="bg-primary-50 text-primary-700 text-xs">你</AvatarFallback>
                       </Avatar>
                     )}
                   </div>
@@ -139,9 +139,9 @@ export default function YouthCompanion() {
                     </Avatar>
                     <div className="chat-bubble-ai">
                       <div className="flex gap-1">
-                        <div className="w-2 h-2 rounded-full bg-secondary/50 animate-bounce" style={{ animationDelay: "0ms" }} />
-                        <div className="w-2 h-2 rounded-full bg-secondary/50 animate-bounce" style={{ animationDelay: "150ms" }} />
-                        <div className="w-2 h-2 rounded-full bg-secondary/50 animate-bounce" style={{ animationDelay: "300ms" }} />
+                    <div className="w-2 h-2 rounded-full bg-honey-400 animate-bounce" style={{ animationDelay: "0ms" }} />
+                        <div className="w-2 h-2 rounded-full bg-honey-400 animate-bounce" style={{ animationDelay: "150ms" }} />
+                        <div className="w-2 h-2 rounded-full bg-honey-400 animate-bounce" style={{ animationDelay: "300ms" }} />
                       </div>
                     </div>
                   </div>
@@ -171,9 +171,9 @@ export default function YouthCompanion() {
       {/* Sidebar - Hidden on mobile, shown on desktop */}
       <div className="space-y-4 hidden lg:block">
         {/* Mood Tracker */}
-        <Card>
+        <Card className="bg-gradient-to-br from-primary-50 to-honey-50 border-primary-200">
           <CardHeader>
-            <CardTitle className="text-base">今天的心情</CardTitle>
+            <CardTitle className="text-base text-primary-900">今天的心情</CardTitle>
             <CardDescription className="text-xs">记录你的情绪变化</CardDescription>
           </CardHeader>
           <CardContent>
@@ -184,8 +184,8 @@ export default function YouthCompanion() {
                   onClick={() => setCurrentMood(mood.value)}
                   className={`p-3 rounded-lg border-2 transition-all ${
                     currentMood === mood.value 
-                      ? 'border-primary bg-primary/5' 
-                      : 'border-border hover:border-primary/50'
+                      ? 'border-primary-600 bg-primary-100' 
+                      : 'border-warm-200 hover:border-primary-300'
                   }`}
                 >
                   <mood.icon className={`w-6 h-6 mx-auto mb-2 ${mood.color}`} />
@@ -248,10 +248,10 @@ export default function YouthCompanion() {
         </Card>
 
         {/* Encouragement */}
-        <Card className="bg-gradient-to-br from-healing-green/10 to-secondary/10 border-healing-green/20">
+        <Card className="bg-gradient-to-br from-primary-50 to-honey-50 border-primary-200">
           <CardHeader>
             <CardTitle className="text-base flex items-center gap-2">
-              <Star className="w-4 h-4 text-warm-orange fill-warm-orange" />
+              <Star className="w-4 h-4 text-honey-600 fill-honey-600" />
               每日鼓励
             </CardTitle>
           </CardHeader>

@@ -105,12 +105,12 @@ export default function FamilyProfile() {
   return (
     <div className="space-y-4 sm:space-y-6">
       {/* Family Overview */}
-      <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <Card className="border-2 border-primary-200 bg-gradient-to-br from-primary-50 to-honey-50">
         <CardHeader>
           <div className="flex items-center justify-between">
             <div>
               <CardTitle className="text-2xl flex items-center gap-2">
-                <Users className="w-6 h-6 text-primary" />
+                <Users className="w-6 h-6 text-primary-600" />
                 家庭成长画像
               </CardTitle>
               <CardDescription className="text-base mt-2">
@@ -128,12 +128,12 @@ export default function FamilyProfile() {
       {/* Family Members - Responsive */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
         {familyMembers.map((member, idx) => (
-          <Card key={idx}>
+          <Card key={idx} className="hover:shadow-md transition-shadow">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <Avatar className="w-12 h-12">
                   <AvatarFallback className={`${
-                    member.role === "parent" ? "bg-primary/10 text-primary" : "bg-secondary/10 text-secondary"
+                    member.role === "parent" ? "bg-primary-50 text-primary-700" : "bg-honey-50 text-honey-700"
                   }`}>
                     {member.name[0]}
                   </AvatarFallback>

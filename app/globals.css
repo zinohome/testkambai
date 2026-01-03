@@ -1,26 +1,226 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Mental Health Platform Colors - Calming & Therapeutic */
+  --primary: #4B92DB; /* Cloudy Sky - Uplifting, peaceful, clarity */
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: #8AB9F1; /* Baby Blue Ice - Soothing, gentle serenity */
+  --secondary-foreground: #1E3A5F;
+  
+  --accent: #90EE90; /* Light Green - Healing, rejuvenation, hope */
+  --accent-foreground: #1E5F1E;
+  
+  --success: #90EE90;
+  --success-foreground: #1E5F1E;
+  
+  --muted: #F5F8FA;
+  --muted-foreground: #64748B;
+  
+  --background: #FFFFFF;
+  --foreground: #1E293B;
+  
+  --card: #FFFFFF;
+  --card-foreground: #1E293B;
+  
+  --popover: #FFFFFF;
+  --popover-foreground: #1E293B;
+  
+  --border: #E2E8F0;
+  --input: #E2E8F0;
+  --ring: #4B92DB;
+  
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  
+  --radius: 12px;
+  
+  /* Sidebar colors */
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #4B92DB;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EFF6FF;
+  --sidebar-accent-foreground: #1E40AF;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #4B92DB;
+  
+  /* Chart colors */
+  --chart-1: #4B92DB;
+  --chart-2: #8AB9F1;
+  --chart-3: #90EE90;
+  --chart-4: #ADD8E6;
+  --chart-5: #99FFFF;
+  
+  /* Custom mental health theme colors */
+  --calm-blue: #8AB9F1;
+  --serene-cyan: #ADD8E6;
+  --healing-green: #90EE90;
+  --warm-orange: #FFA07A;
+  --soft-purple: #B4A7D6;
+}
+
+.dark {
+  --primary: #5AA7F0;
+  --primary-foreground: #0F1419;
+  
+  --secondary: #6B9FD9;
+  --secondary-foreground: #F8FAFC;
+  
+  --accent: #7EC87E;
+  --accent-foreground: #F8FAFC;
+  
+  --success: #7EC87E;
+  --success-foreground: #F8FAFC;
+  
+  --muted: #1E293B;
+  --muted-foreground: #94A3B8;
+  
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  
+  --border: #334155;
+  --input: #334155;
+  --ring: #5AA7F0;
+  
+  --destructive: #DC2626;
+  --destructive-foreground: #F8FAFC;
+  
+  --sidebar: #1E293B;
+  --sidebar-foreground: #E2E8F0;
+  --sidebar-primary: #5AA7F0;
+  --sidebar-primary-foreground: #F8FAFC;
+  --sidebar-accent: #334155;
+  --sidebar-accent-foreground: #93C5FD;
+  --sidebar-border: #334155;
+  --sidebar-ring: #5AA7F0;
+  
+  --chart-1: #5AA7F0;
+  --chart-2: #7EC87E;
+  --chart-3: #ADD8E6;
+  --chart-4: #B4A7D6;
+  --chart-5: #FFA07A;
+  
+  --calm-blue: #6B9FD9;
+  --serene-cyan: #7EC8E6;
+  --healing-green: #7EC87E;
+  --warm-orange: #FF9668;
+  --soft-purple: #9B8EC4;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  --color-calm-blue: var(--calm-blue);
+  --color-serene-cyan: var(--serene-cyan);
+  --color-healing-green: var(--healing-green);
+  --color-warm-orange: var(--warm-orange);
+  --color-soft-purple: var(--soft-purple);
+  
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Custom utility classes for mental health platform */
+  .section-heading {
+    @apply text-xl sm:text-2xl font-semibold text-foreground mb-3 sm:mb-4;
+  }
+  
+  .subsection-heading {
+    @apply text-base sm:text-lg font-medium text-foreground mb-2 sm:mb-3;
+  }
+  
+  .card-subtle {
+    @apply bg-muted/30 border border-border/50 rounded-lg p-3 sm:p-4;
+  }
+  
+  .text-meta {
+    @apply text-[10px] sm:text-xs font-medium uppercase tracking-wider text-muted-foreground;
+  }
+  
+  .chat-bubble-user {
+    @apply bg-primary text-primary-foreground rounded-2xl rounded-br-sm px-3 py-2 sm:px-4 sm:py-2.5 max-w-[75%];
+  }
+  
+  .chat-bubble-ai {
+    @apply bg-card border border-border rounded-2xl rounded-bl-sm px-3 py-2 sm:px-4 sm:py-2.5 max-w-[75%] shadow-sm;
+  }
+  
+  .sidebar-link {
+    @apply flex items-center gap-2 sm:gap-3 px-2 py-2 sm:px-3 sm:py-2.5 rounded-lg text-sm font-medium transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground;
+  }
+  
+  .sidebar-link-active {
+    @apply bg-sidebar-accent text-sidebar-accent-foreground;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }

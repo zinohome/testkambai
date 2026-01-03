@@ -9,7 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Compatibility aliases for legacy class names used throughout the app
+        // (e.g. text-healing-green, bg-warm-orange, text-soft-purple, etc.)
+        'healing-green': 'var(--healing-green)',
+        'warm-orange': 'var(--warm-orange)',
+        'soft-purple': 'var(--soft-purple)',
+        'serene-cyan': 'var(--serene-cyan)',
+        'calm-blue': 'var(--calm-blue)',
+
         primary: {
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
           50: 'var(--primary-50)',
           100: 'var(--primary-100)',
           200: 'var(--primary-200)',
@@ -21,6 +31,10 @@ const config: Config = {
           800: 'var(--primary-800)',
           900: 'var(--primary-900)',
           950: 'var(--primary-950)',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
         },
         honey: {
           50: 'var(--honey-50)',
